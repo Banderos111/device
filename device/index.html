@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Девайс</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="header-nav">
       <a class="logo" href="index.html">
-        <img src="" alt="Логотип Девайс">
+        <img src="img/logo.svg" alt="Логотип Девайс" width="145" height="36">
       </a>
       <div class="additional-menu">
         <form class="search-form" action="https://echo.htmlacademy.ru/">
@@ -18,7 +19,7 @@
             <span class="visually-hidden">поиск по каталогу</span>
             <input class="search-input field" type="text" name="search" placeholder="Текст поиска">
           </label>
-          <button class="search-button button" type="submit">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <a class="log-in" href="#">
           <span>Войти</span>
@@ -28,11 +29,11 @@
         </a>
         <a class="shopping-cart" href="#">
           <span>Корзина</span>
-          <span>2</span>
+          <span class="shopping-cart-counter">2</span>
         </a>
       </div>
       <div class="catalog">
-        <a class="catalog-link" href="#">Каталог</a>
+        <a class="catalog-link" href="#">Каталог товаров</a>
       </div>
       <div class="site-menu">
         <ul class="site-menu-list">
@@ -61,7 +62,8 @@
 
     <section class="leaderboard-gallery">
       <h2 class="visually-hidden">Галерея лидера продаж</h2>
-      <img class="slider-img" src="" alt="Фото лидера продаж">
+      <span class="lead-number">01</span>
+      <img class="slider-img" src="img/slider-1.jpg" alt="Фото лидера продаж" width="560" height="560">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -101,8 +103,8 @@
       <h2 class="visually-hidden">Список категорий товаров</h2>
       <ul class="categories-list">
         <li class="categories-item">
-          <img class="categories-img" src="" alt="фото категории Виртуальная
-          реальность">
+          <img class="categories-img" src="img/categories_1.svg" alt="фото категории Виртуальная
+          реальность" width="97" height="55">
           <a class="categories-link" href="#">
             <b>
               Виртуальная
@@ -111,8 +113,8 @@
           </a>
         </li>
         <li class="categories-item">
-          <img class="categories-img" src="" alt="фото категории Моноподы
-          для селфи">
+          <img class="categories-img" src="img/categories_2.svg" alt="фото категории Моноподы
+          для селфи" width="86" height="117">
           <a class="categories-link" href="#">
             <b>
               Моноподы
@@ -121,7 +123,7 @@
           </a>
         </li>
         <li class="categories-item">
-          <img class="categories-img" src="" alt="фото категории Экшн-камеры">
+          <img class="categories-img" src="img/categories_3.svg" alt="фото категории Экшн-камеры" width="71" height="87">
           <a class="categories-link" href="#">
             <b>
               Экшн-камеры
@@ -129,7 +131,7 @@
           </a>
         </li>
         <li class="categories-item">
-          <img class="categories-img" src="" alt="фото категории  Фитнес-браслеты">
+          <img class="categories-img" src="img/categories_4.svg" alt="фото категории  Фитнес-браслеты" width="107" height="65">
           <a class="categories-link" href="#">
             <b>
               Фитнес-браслеты
@@ -137,7 +139,7 @@
           </a>
         </li>
         <li class="categories-item">
-          <img class="categories-img" src="" alt="фото категории Умные часы">
+          <img class="categories-img" src="img/categories_5.svg" alt="фото категории Умные часы" width="56" height="98">
           <a class="categories-link" href="#">
             <b>
               Умные часы
@@ -145,7 +147,7 @@
           </a>
         </li>
         <li class="categories-item">
-          <img class="categories-img" src="" alt="фото категории Квадрокоптеры">
+          <img class="categories-img" src="img/categories_6.svg" alt="фото категории Квадрокоптеры" width="132" height="69">
           <a class="categories-link" href="#">
             <b>
               Квадрокоптеры
@@ -159,14 +161,14 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list">
         <li class="advantsges-item">
-          <a class="advantages-link button" href="#">
+          <a class="advantages-link button advantages-current" href="#">
             доставка
           </a>
           <p class="advantages-title">Доставка</p>
           <p class="advantages-description">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img src="" alt="изображение человека с почтой">
+          <img src="img/man.svg" alt="изображение человека с почтой" width="136" height="164">
         </li>
         <li class="advantsges-item">
           <a class="advantages-link button" href="#">гарантия</a>
@@ -179,8 +181,8 @@
 
     <section class="delivery">
       <h2 class="visually-hidden">Доставка товара под заказ</h2>
+      <img class="delivery-img" src="img/car.svg" alt="знак доставки" width="125" height="100">
       <a class="delivery-link" href="#">
-        <img class="delivery-img" src="" alt="знак доставки">
         <p class="delivery-description">Доставим редкий товар под заказ</p>
       </a>
     </section>
@@ -205,12 +207,12 @@
       <h2 class="contacts-title">Контакты</h2>
       <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.
         Заодно сможете проверить работоспособность покупки. </p>
-      <h3 class="contscts-subtitle">Интернет-магазин «Девайс»</h3>
+      <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
       <address class="contacts-adress">
-        <p class="contscts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-      <h3 class="contscts-subtitle">Время работы</h3>
+      <h3 class="contacts-subtitle">Время работы</h3>
       <ul class="contacts-schedule">
         <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
         <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
@@ -228,14 +230,14 @@
           <span class="visually-hidden">Ваш email</span>
           <input class="subscribe-input" type="email" name="subscribe-input" placeholder="Ваш e-mail">
         </label>
-        <button class="subscribe-button" type="button">Подписаться</button>
+        <button class="subscribe-button button" type="button">Подписаться</button>
         <p class="subscribe-free">Это бесплатно</p>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <img class="logo" src="" alt="Логотип Девайс">
+    <img class="logo" src="img/footer_logo.svg" alt="Логотип Девайс" width="145" height="36">
     <address class="fotter-adress">
       <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
     </address>
@@ -280,7 +282,7 @@
       </ul>
     </section>
     <a class="footer-developer" href="https://htmlacademy.ru/">
-      <img src="" alt="Разработано при поддержке HTML Academy">
+      <img src="img/html_academy.svg" alt="Разработано при поддержке HTML Academy" width="115" height="33">
     </a>
   </footer>
 </body>

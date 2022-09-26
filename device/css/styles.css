@@ -512,6 +512,10 @@ body {
   color: #000000;
 }
 
+.breadcrumbs{
+  display: flex;
+}
+
 .breadcrumbs a {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -524,6 +528,7 @@ body {
 
 .catalog-products {
   background: #f0f0f0;
+  display: flex;
 }
 
 .filter-title,
@@ -536,6 +541,11 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-filter-group{
+  width: 200px;
+  margin-right: 60px;
 }
 
 .catalog-filter-title {
@@ -575,6 +585,10 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+
+.catalog-right-column{
+  width: 840px;
 }
 
 .product-card-title {
